@@ -1,0 +1,22 @@
+Repository Service Pattern
+
+1.) api.php
+2.) userServiceController.php
+3.) userService.php
+4.) userRepository.php
+
+* api.php
+- Resource route create 
+- data store & Get method calling
+
+* userServiceController.php
+- store method in request data send to userService.php
+- last in return error msg or successfully msg
+
+* userService.php
+- userService.php file in validation check 
+- before send data userRepository.php file
+
+* userRepository
+- model variable objject create using database in save data
+- response send to controller 
