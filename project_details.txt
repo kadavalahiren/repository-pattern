@@ -1,0 +1,20 @@
+UserRequest.php - app\Http\Requests\UserRequest.php   - Validation file
+ 
+* API Resource & Collection 
+
+1)UserResource.php - app\Http\Resources\UserResources.php - Resource Data 
+2)UserCollection.php - app\Http\Resources\UserCollection.php - collection of Data
+
+* Repository Pattern - ( API CALLED DEMO ) - api.php
+
+1)UserInterface.php - In Empty Method are Defined. - app\Repositories\UserInterface.php
+2)UserRepository.php - In UserInterface implements & method in Logic build. this is class file - app\Repositories\UserRepository.php 
+3)UserController.php - Controller in method define & request data to sendind to specific mehod call. - app\Http\Controllers\UserController.php
+4)AppServiceProvider.php - register function in ( bind service ) Interface & InterfaceClass file is register - app\Providers\AppServiceProvider.php
+
+* Repository Pattern - ( Web Routes Demo ) - web.php
+
+1)UserDemoInterface.php -In Empty Method are Defined. -app\Repositories\UserDemoInterface.php
+2)UserDemoRepository.php -In UserInterface implements & method in Logic build. this is class file - app\Repositories\UserDemoRepository.php  
+3)UserRoutesController.php - Controller in method define & request data to sendind to specific mehod call. - app\Http\Controllers\UserRoutesController.php
+4)AppServiceProvider.php - register function in ( bind service ) Interface & InterfaceClass file is register - app\Providers\AppServiceProvider.php
